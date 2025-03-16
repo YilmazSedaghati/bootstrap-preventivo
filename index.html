@@ -21,8 +21,7 @@
 <body>
     <header>
         <!-- insert nav bar with site title and menu -->
-        <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body fixed-top bg-body-tertiary"
-            data-bs-theme="dark">
+        <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Bool Factory</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -50,27 +49,84 @@
     </header>
     <!-- insert main part -->
     <main>
-        <div class="mb-3">
-            <label for="formFile" class="form-label">Default file input example</label>
-            <input class="form-control" type="file" id="formFile">
-          </div>
-          <div class="mb-3">
-            <label for="formFileMultiple" class="form-label">Multiple files input example</label>
-            <input class="form-control" type="file" id="formFileMultiple" multiple>
-          </div>
-          <div class="mb-3">
-            <label for="formFileDisabled" class="form-label">Disabled file input example</label>
-            <input class="form-control" type="file" id="formFileDisabled" disabled>
-          </div>
-          <div class="mb-3">
-            <label for="formFileSm" class="form-label">Small file input example</label>
-            <input class="form-control form-control-sm" id="formFileSm" type="file">
-          </div>
-          <div>
-            <label for="formFileLg" class="form-label">Large file input example</label>
-            <input class="form-control form-control-lg" id="formFileLg" type="file">
-          </div>
+        <div class="container main-container">
+            <div class="row">
+                <div class="form-container col-12 col-md-8">
+                    <form>
+                        <div class="mb-3">
+                            <span class="formtext fs-3">
+                                <strong>Richiesta preventivo</strong>
+                            </span>
+                            <br>
+                            <p>Compila il form per richiedere un preventivo per i nostri servizi di sviluppo</p>
+                        </div>
+                        <br>
+                        <!-- insert form to fill -->
+                        <div>
+                            <label for="name" class="fs-7 campi">Nome</label>
+                            <input type="text" class="form-control campi" id="nome" placeholder="il tuo nome">
+                            <label for="surname" class="surname campi">Cognome</label>
+                            <input type="text" class="form-control campi" id="cognome" placeholder="il tuo cognome">
+                            <label for="email" class="fs-7 campi">Email address</label>
+                            <input type="email" class="form-control campi" id="email" aria-describedby="emailHelp"
+                                placeholder="name@example.com">
+                        </div>
+                        <!-- insert select bar with type of job commission-->
+                        <label for="lavoro" class="fs-7 campi">Tipo di Lavoro</label>
+                        <select class="form-select campi" id="lavoro" aria-label="Default select example">
+                            <option selected>Seleziona il tipo di lavoro</option>
+                            <option value="1">Backend Development</option>
+                            <option value="2">Frontend Development</option>
+                            <option value="3">Project Analysis</option>
+                        </select>
+                        <!-- insert textarea, promotional code and privacy check -->
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label fs-7 campi">Textarea con
+                                Bootstrap5</label>
+                            <textarea class="form-control campi" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <div>
+                            <label for="promo" class="fs-7 campi">Codice Promozionale (opzionale)</label>
+                            <input type="text" class="form-control campi" id="promo"
+                                placeholder="inserisci il tuo codice promozionale">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input fs-7 campi" id="exampleCheck1">
+                            <label class="form-check-label campi" for="exampleCheck1">Accetto la privacy policy</label>
+                        </div>
+                        <div class="result-container">
+                            <button type="submit" class="btn btn-primary col-md-4 justify-content-center">Calcola il
+                                preventivo</button>
+                            <button class="col-md-4"></button>
+                        </div>
+                    </form>
+                </div>
+                <div class="contact-container col-12 col-md-4">
+                    <!-- card insert -->
+                    <div class="card" style="width: 18rem;">
+                        <img src="./img/pigs-piglet-looking-door-1313308.jpg.webp" class="card-img-top photomt" alt="funny-pig">
+                        <div class="card-body">
+                            <h5 class="card-title">I nostri contatti</h5>
+                            <p class="card-text">Se hai bisogno di aiuto puoi contattarci:</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">help@boolfactory.test</li>
+                          <li class="list-group-item">+1122334455</li>
+                        </ul>
+                        <div class="card-body">
+                          <a href="#" class="card-link">Help Desk</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
     </main>
+    <!-- insert footer part -->
+     <footer>
+        <div class="foot-container bg-dark"  data-bs-theme="dark">
+            <span class="diritti">&copy 2024 - Tutti i diritti riservati</span>
+        </div>
+     </footer>
 </body>
 
 </html>
