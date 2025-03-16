@@ -78,11 +78,12 @@
                             <option value="1">Backend Development</option>
                             <option value="2">Frontend Development</option>
                             <option value="3">Project Analysis</option>
+                            <option value="4">Content Management</option>
+                            <option value="5">E-commerce Management</option>
                         </select>
                         <!-- insert textarea, promotional code and privacy check -->
                         <div class="mb-3">
-                            <label for="exampleFormControlTextarea1" class="form-label fs-7 campi">Textarea con
-                                Bootstrap5</label>
+                            <label for="exampleFormControlTextarea1" class="form-label fs-7 campi">Spiegaci il progetto e tutte le informazioni utili per eseguirlo</label>
                             <textarea class="form-control campi" id="exampleFormControlTextarea1" rows="3"></textarea>
                         </div>
                         <div>
@@ -94,39 +95,49 @@
                             <input type="checkbox" class="form-check-input fs-7 campi" id="exampleCheck1">
                             <label class="form-check-label campi" for="exampleCheck1">Accetto la privacy policy</label>
                         </div>
-                        <div class="result-container">
-                            <button type="submit" class="btn btn-primary col-md-4 justify-content-center">Calcola il
-                                preventivo</button>
-                            <button class="col-md-4"></button>
-                        </div>
                     </form>
+                    <div class="row">
+                        <div class="result-container col-6 col-md-6">
+                            <button type="submit" class="btn btn-primary justify-content-center">Calcola il
+                                preventivo</button>
+                        </div>
+                        <div class="price-container col-6 col-md-6">
+                            <p class="fw-bold">Prezzo finale</p>
+                            <p class="price">
+                                <span class="text-secondary text-decoration-line-through">€</span>
+                                <span class="fs-2 fw-bold" id="final-price">0</span>
+                            </p>
+                        </div>
+                    </div>
                 </div>
                 <div class="contact-container col-12 col-md-4">
                     <!-- card insert -->
                     <div class="card" style="width: 18rem;">
-                        <img src="./img/pigs-piglet-looking-door-1313308.jpg.webp" class="card-img-top photomt" alt="funny-pig">
+                        <img src="./img/pigs-piglet-looking-door-1313308.jpg.webp" class="card-img-top photomt"
+                            alt="funny-pig">
                         <div class="card-body">
                             <h5 class="card-title">I nostri contatti</h5>
                             <p class="card-text">Se hai bisogno di aiuto puoi contattarci:</p>
                         </div>
                         <ul class="list-group list-group-flush">
-                          <li class="list-group-item">help@boolfactory.test</li>
-                          <li class="list-group-item">+1122334455</li>
+                            <li class="list-group-item">help@boolfactory.test</li>
+                            <li class="list-group-item">+1122334455</li>
                         </ul>
                         <div class="card-body">
-                          <a href="#" class="card-link">Help Desk</a>
+                            <a href="#" class="card-link">Help Desk</a>
                         </div>
-                      </div>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
     <!-- insert footer part -->
-     <footer>
-        <div class="foot-container bg-dark"  data-bs-theme="dark">
+    <footer>
+        <div class="foot-container bg-dark" data-bs-theme="dark">
             <span class="diritti">&copy 2024 - Tutti i diritti riservati</span>
         </div>
-     </footer>
+    </footer>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
