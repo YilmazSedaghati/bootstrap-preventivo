@@ -63,10 +63,10 @@
                         <br>
                         <!-- insert form to fill -->
                         <div>
-                            <label for="name" class="fs-7 campi">Nome</label>
+                            <label for="nome" class="fs-7 campi">Nome</label>
                             <input type="text" class="form-control campi" id="nome" placeholder="il tuo nome">
                             <label for="surname" class="surname campi">Cognome</label>
-                            <input type="text" class="form-control campi" id="cognome" placeholder="il tuo cognome">
+                            <input type="text" class="form-control campi" id="surname" placeholder="il tuo cognome">
                             <label for="email" class="fs-7 campi">Email address</label>
                             <input type="email" class="form-control campi" id="email" aria-describedby="emailHelp"
                                 placeholder="name@example.com">
@@ -83,7 +83,8 @@
                         </select>
                         <!-- insert textarea, promotional code and privacy check -->
                         <div class="mb-3">
-                            <label for="exampleFormControlTextarea1" class="form-label fs-7 campi">Spiegaci il progetto e tutte le informazioni utili per eseguirlo</label>
+                            <label for="exampleFormControlTextarea1" class="form-label fs-7 campi">Spiegaci il progetto
+                                e tutte le informazioni utili per eseguirlo</label>
                             <textarea class="form-control campi" id="exampleFormControlTextarea1" rows="3"></textarea>
                         </div>
                         <div>
@@ -96,9 +97,10 @@
                             <label class="form-check-label campi" for="exampleCheck1">Accetto la privacy policy</label>
                         </div>
                     </form>
+                    <!-- insert submit btn and price container -->
                     <div class="row">
                         <div class="result-container col-6 col-md-6">
-                            <button type="submit" class="btn btn-primary justify-content-center">Calcola il
+                            <button type="submit" class="btn btn-primary justify-content-center preventivo" id="preventivo">Calcola il
                                 preventivo</button>
                         </div>
                         <div class="price-container col-6 col-md-6">
@@ -137,7 +139,7 @@
             <span class="diritti">&copy 2024 - Tutti i diritti riservati</span>
         </div>
     </footer>
-    <script src="./js/script.js"></script>
+<script src="./js/script.js"></script>
 </body>
 
 </html>
